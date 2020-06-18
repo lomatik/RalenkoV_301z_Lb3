@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:icecore="http://www.icefaces.org/icefaces/core"
+      xmlns:ace="http://www.icefaces.org/icefaces/components">
+    <h:head>
+        <title>ICEfaces Test Page</title>
+        <!-- This line is only for ICE component, remove it if no ice component is used in this page.-->
+        <link rel="stylesheet" type="text/css" href="./xmlhttp/css/rime/rime.css"/>
+    </h:head>
+    <h:body>
+        <h:form>
+
+            <ace:panel header="Test ICEfaces">
+                <h:panelGrid columns="2">
+                    <ace:linkButton id="linkButton1" value="Index.html" href="http://localhost:8080/laba2-war/index.xhtml"></ace:linkButton>
+                    <ace:linkButton id="linkButton2" value="Index.jsp" href="http://localhost:8080/laba2-war/index.jsp"></ace:linkButton>
+                    <ace:qrcode />
+                    <ace:colorEntry id="colorInput" value="#FFFFFF" label="Choose Color:" labelPosition="left" />
+                </h:panelGrid>
+            </ace:panel>
+
+        </h:form>
+    </h:body>
+</html>

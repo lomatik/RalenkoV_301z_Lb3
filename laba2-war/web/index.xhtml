@@ -9,14 +9,16 @@
     <h:body>
         <ez:hello message="#{helloBean.message}"/>
         <h:form>
-        <h:panelGrid columns="2" border="0">
-            <h:outputText value="Логін"/>
-            <h:inputText value="#{Main.username}" />
-            <h:outputText value="Пароль"/>
-            <h:inputSecret value="#{Main.password}" />
-        </h:panelGrid>
-        <h:commandButton value="Вхід" action="#{Main.validateUser()}" />
-    </h:form>
+            <h:panelGrid columns="2" border="0">
+                <h:outputText value="Логін"/>
+                <h:inputText value="#{Main.username}" />
+                <h:outputText value="Пароль"/>
+                <h:inputSecret value="#{Main.password}" />
+            </h:panelGrid>
+            <h:commandButton value="Вхід" action="#{Main.validateUser()}" />
+        </h:form>
+        <br />
+        <h:link outcome="welcomeIcefaces" value="ICEface test page" />
     </h:body>
 </html>
 
